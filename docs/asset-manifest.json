@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a5fb4b0.css",
+    "main.js": "/static/js/main.b87bf46a.js",
+    "static/media/tituloPokemon.png": "/static/media/tituloPokemon.253f9851e9f9b20ab616.png",
+    "static/media/poison.png": "/static/media/poison.ae3843070a44ebbe1080.png",
+    "static/media/grass.png": "/static/media/grass.437b608e255c1100cb2b.png",
+    "static/media/bug.png": "/static/media/bug.cf51fd95389380a71d7a.png",
+    "static/media/fairy.png": "/static/media/fairy.08d04ba5432731571a3e.png",
+    "static/media/water.png": "/static/media/water.e57cab9102dfc022d65d.png",
+    "static/media/fly.png": "/static/media/fly.d2c03053c64617359912.png",
+    "static/media/fire.png": "/static/media/fire.873fd9be3d7b29b188d4.png",
+    "static/media/ground.png": "/static/media/ground.a46508b845ffb9f10267.png",
+    "static/media/electric.png": "/static/media/electric.f6fdc3e9a052d02b9f27.png",
+    "index.html": "/index.html",
+    "main.7a5fb4b0.css.map": "/static/css/main.7a5fb4b0.css.map",
+    "main.b87bf46a.js.map": "/static/js/main.b87bf46a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a5fb4b0.css",
+    "static/js/main.b87bf46a.js"
+  ]
+}
