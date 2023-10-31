@@ -2,7 +2,7 @@ import PokemonCard from './PokemonCard';
 
 const PokemonList = ({ pokemons }) => {
   return (
-    <div className='PokemonList'>
+    <div className='flex flex-wrap justify-center'>
       {pokemons.map((pokemon) => {
         return (
           <PokemonCard
