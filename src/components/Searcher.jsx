@@ -1,7 +1,7 @@
-//import { useState } from 'react';
 import { Search } from 'react-feather';
 import { useDispatch, useSelector } from 'react-redux';
-import { setSearchQuery, setFilteredPokemons } from '../slices/searchSlice';
+import { setSearchQuery } from '../slices/searchSlice';
+import PokemonList from './PokemonList'; // Asegúrate de importar correctamente
 
 const Searcher = () => {
   const dispatch = useDispatch();
@@ -11,8 +11,12 @@ const Searcher = () => {
   const handleSearch = (e) => {
     const searchTerm = e.target.value;
     dispatch(setSearchQuery(searchTerm));
-    dispatch(setFilteredPokemons({ pokemons, searchQuery: searchTerm }));
   };
+
+  // Filtra los pokemons en función de la búsqueda
+  const filteredPokemons = pokemons.filter((pokemon) =>
+    pokemon.name.toLowerCase().startsWith(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="flex items-center justify-center">
@@ -28,6 +32,8 @@ const Searcher = () => {
           onChange={handleSearch}
         />
       </div>
+      {/* Mostrar la lista filtrada de tarjetas de Pokémon */}
+      <PokemonList pokemons={filteredPokemons} />
     </div>
   );
 };

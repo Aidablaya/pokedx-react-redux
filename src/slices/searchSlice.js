@@ -1,8 +1,8 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   searchQuery: '',
-  filteredPokemons: [],
+  filteredPokemons: [], // Inicializar con un array vacío
 };
 
 export const searchSlice = createSlice({
@@ -14,9 +14,14 @@ export const searchSlice = createSlice({
     },
     setFilteredPokemons: (state, action) => {
       const { pokemons, searchQuery } = action.payload;
-      state.filteredPokemons = pokemons.filter(pokemon =>
-        pokemon.name.toLowerCase().includes(searchQuery.toLowerCase())
-      );
+
+      if (pokemons) {
+        state.filteredPokemons = pokemons.filter(pokemon =>
+          pokemon.name.toLowerCase().startsWith(searchQuery.toLowerCase())
+        );
+      } else {
+        state.filteredPokemons = [];
+      }
     },
   },
 });

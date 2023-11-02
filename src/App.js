@@ -19,16 +19,17 @@ function App() {
       <header className="p-6">
         <img src={logo} alt="Pokedux" className='h-52' />
       </header>
-      <main>
+      <main className='flex flex-col'>
         <Searcher />
-      </main>
-      {loading ? (
-        <div className="flex justify-center items-center h-screen">
+        <div className='flex flex-col'> {loading ? (
+        <div className="flex flex-col justify-center items-center h-screen">
           <div className="spinner"></div>
         </div>
       ) : (
         <PokemonList pokemons={pokemons} />
-      )}
+      )} </div>
+      </main>
+      
     </div>
   );
 }
