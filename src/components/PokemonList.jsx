@@ -4,7 +4,7 @@ import PokemonCard from './PokemonCard';
 const PokemonList = ({ pokemons }) => {
   // Verifica si 'pokemons' es nulo o indefinido, o si no es un array válido
   if (!pokemons || !Array.isArray(pokemons) || pokemons.length === 0) {
-    return <div>No se encontraron Pokémon.</div>;
+    return <div >No se encontraron Pokémon.</div>;
   }
 
   return (

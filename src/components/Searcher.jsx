@@ -19,21 +19,25 @@ const Searcher = () => {
   );
 
   return (
-    <div className="flex items-center justify-center">
-      <div className="relative">
-        <div className="absolute inset-0 left-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
-          <Search size={20} />
+    <div className="flex flex-col items-center justify-center pt-6">
+      <div className="relative bg-black w-screen flex items-center justify-center">
+        
+        <div className=" flex items-center pointer-events-none justify-center w-10">
+          <Search size={20} color='white' />
         </div>
+        
+
         <input
           type="text"
-          className="flex items-center mb-3 p-2 pl-10 pr-3 border-2 border-black-500 w-64 rounded-lg"
-          placeholder="Buscar Pokemon"
+          className="p-2 pl-4 pr-3 border-2 border-black w-64 rounded-lg bg-white text-black"
+          placeholder="Buscar Pokemon "
           value={searchQuery}
           onChange={handleSearch}
         />
       </div>
-      {/* Mostrar la lista filtrada de tarjetas de Pokémon */}
-      <PokemonList pokemons={filteredPokemons} />
+      <div>
+        <PokemonList pokemons={filteredPokemons} />
+      </div>
     </div>
   );
 };
