@@ -1,7 +1,7 @@
 # Pokedx
 
 <div style="text-align: right;">
-  <img src="https://github.com/Aidablaya/drag-and-drop-react/blob/main/src/statics/captura.png" width="300" height="250">
+  <img src="https://github.com/Aidablaya/pokedx-react-redux/blob/main/src/statics/captura.png" width="300" height="250">
 </div>
 
 - React/Redux/Tailwind.
